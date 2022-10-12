@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Bank simulator</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="logo_caisse_epargne.png" id="nav-logo" alt="Meilleure banque du monde">
+            <img src="caisse_epargne_logo.jpg" id="nav-logo-mobile"alt="Meilleure banque du monde">
+            <ul id="menu">
+                <li><a href="#hero">Accueil</a></li>
+            </ul>
+            <div id="menu-compte">
+                <a href="#section-deux"><span class="material-symbols-outlined">
+                    person
+                </span></a>
+                <a href="#section-deux"> <p> Gestion du compte </p> </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="hero">
+            <article id="txt-hero">
+                <h1>Bienvenue sur votre gestion de compte bancaire</h1>
+                <button>Télécharger l'application
+                    <span class="material-symbols-outlined">
+                        download
+                    </span>
+                </button>
+            </article>
+        </section>
+
+
+        <section id="section-deux">
+
+            <article id="compte-un">
+                <h3>Compte courants</h3>
+                <div id="info-solde-un" class="flx">
+                    <p>Compte individuel</p>
+                    <span id="solde-courants">0€</span>
+                </div>
+            </article>
+
+
+
+
+            <article id="historique-virements">
+                <h3>Virements</h3>
+                <div id="info-virements">
+                    <p>Historique des virements</p>
+                    <span id="liste-virements">Vide pour le moment...</span>
+                </div>
+            </article>
+
+
+            <article id="virments">
+                <h3>Effectuer un virement</h3>
+                <div id="virement-int">
+                    <p>Montant du virement</p>
+                    <p id="input-virement">
+                        <input type="text" id="montant-du-virement">
+                        <span>€</span>
+                    </p>
+                    <button id="valider">Valider</button>
+                    <button id="annuler">Effacer</button>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div id="nom">
+            <p>DOE</p>
+            <p>John</p>
+        </div>
+        <div id="identifiant">
+            <p>ID:</p>
+            <p id="num-id"></p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
